@@ -1,29 +1,21 @@
-import React from 'react'
-
-export default function Navbar(props) {
-  return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary ">
-  <div className="container-fluid bg-black">
-    <a className="navbar-brand" href="/">{props.title}</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active text-white" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-white" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjlzdau_sGEAxUdSWwGHRlICg0QFnoECAcQAQ&url=https%3A%2F%2Fwww.wikipedia.org%2F&usg=AOvVaw3ay7vaEtH0yTTYdDmrvinX&opi=89978449">Wikipedia</a>
-        </li>
-        
-      </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success bg-white" type="submit">Search</button>
-      </form>
+function HeroSection(){
+  return(
+    <div className="main">
+    <div className="part1">
+      <h1>YOUR FEET DESERVE THE BEST</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam saepe beatae eaque nulla, in vitae molestiae similique fugit. Mollitia eaque iusto doloremque inventore alias facilis, dolore eveniet commodi nostrum.</p>
+      <div className="btncln">
+      <button>Shop Now</button>
+      <button>Category</button>
+      </div>
+      <p>Also Available On</p>
+      <img src="download.png" alt="flipkart" />
+      <img src="amazon.png" alt="amazon" />
     </div>
-  </div>
-</nav>
-  );
+    <div className="part2">
+      <img src="sports-shoes.png" alt="shoe" />
+    </div>
+    </div>
+  )
 }
+export default HeroSection;
